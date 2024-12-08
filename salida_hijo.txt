@@ -1,3 +1,0 @@
-Introduce cadenas. Escribe '*' para terminar:
-Leído: eseeee
-Programa terminado.
