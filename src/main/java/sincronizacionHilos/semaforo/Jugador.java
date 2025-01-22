@@ -6,12 +6,14 @@ public class Jugador implements Runnable{
     // Declaramos un semáforo para controlar el acceso a la sección crítica
     public static final Semaphore semaforo = new Semaphore(3);
 
-    public void entrar(){
+    public void entrar() throws InterruptedException {
         // TODO: Aqui hay que coger un permiso
+        semaforo.acquire();
     }
 
     public void salir(){
         // TODO: Aqui hay que soltar un permiso
+        semaforo.release();
     }
 
     @Override
